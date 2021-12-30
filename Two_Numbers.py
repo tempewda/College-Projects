@@ -1,5 +1,6 @@
 # Program to input 2 numbers and find the sum, difference, product and quotient
 
+# take input from User
 print("Enter 2 numbers:")
 num1 = int(input("1st number: "))
 num2 = int(input("2nd number: "))
