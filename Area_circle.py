@@ -1,4 +1,6 @@
 # Program to read radius of a circle and print its area
+# Area of a circle = PI * R * R
+
 import math
 
 radius = float(input("Radius: "))
