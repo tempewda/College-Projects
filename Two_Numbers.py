@@ -14,6 +14,6 @@ print(f"{num1} - {num2} = {num1 - num2}")       # print the difference
 print(f"{num1} X {num2} = {num1 * num2}")       # print the product
 if num2 != 0:
     print(f"{num1} / {num2} = {num1 // num2}")  # print the quotient
-else:
+else:                                           # if the divisor is 0 (zero)
     print("Division by 0 not possible!!")
 
