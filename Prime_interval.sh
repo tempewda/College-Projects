@@ -9,7 +9,7 @@ is_Prime()
     num=$1
     factors=0
 
-    for (( i=2; i<num; i++ ))
+    for (( i=1; i<=num; i++ ))
     do
         if(( $(( num%i )) == 0 ))
         then
@@ -17,11 +17,11 @@ is_Prime()
         fi
     done
 
-    if(( $factors>1 || $num<=1 ))
+    if(( $factors==2 ))
     then
-        return 0
-    else
         return 1
+    else
+        return 0
     fi
 }
 
