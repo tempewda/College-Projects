@@ -13,14 +13,14 @@ jmp start
 
 
 ;code
-start: 	lxi H,8080
+start: 		lxi H,8080
 	     	mvi B,00H   	;even number
-	     	mvi C,0AH	    ;n
-		    mvi D,00H	    ;sum
+	     	mvi C,0AH	;n
+		mvi D,00H	;sum
   
-loop:	  mov A,B		;store number in memory
-		    mov M,A
-		    inx H		;next memory
+loop:	 	mov A,B		;store number in memory
+		mov M,A
+		inx H		;next memory
 	    	inr B		;next even number		
 	    	inr B
 	    	add D		;sum
